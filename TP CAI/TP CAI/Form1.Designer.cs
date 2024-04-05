@@ -42,16 +42,6 @@
             lblContraseña = new Label();
             lblTipoUsuario = new Label();
             linkLabelVolver = new LinkLabel();
-            buttonNombre = new Button();
-            buttonApellido = new Button();
-            buttonDNI = new Button();
-            buttonFecha = new Button();
-            buttonEmail = new Button();
-            buttonTelefono = new Button();
-            buttonDireccion = new Button();
-            buttonUsuario = new Button();
-            buttonContraseña = new Button();
-            buttonTipoUsuario = new Button();
             lblErrorNombre = new Label();
             lblErrorApellido = new Label();
             lblErrorDNI = new Label();
@@ -62,6 +52,17 @@
             lblErrorUsuario = new Label();
             lblErrorContraseña = new Label();
             lblErrorTipoUsuario = new Label();
+            txtNombre = new TextBox();
+            txtApellido = new TextBox();
+            txtDNI = new TextBox();
+            txtFechaNac = new TextBox();
+            txtEmail = new TextBox();
+            txtTelefono = new TextBox();
+            txtDireccion = new TextBox();
+            txtUsuario = new TextBox();
+            txtContraseña = new TextBox();
+            cmbTipoUsuario = new ComboBox();
+            btnConfirmar = new ePOSOne.btnProduct.Button_WOC();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -207,87 +208,6 @@
             linkLabelVolver.TabStop = true;
             linkLabelVolver.Text = "Volver";
             // 
-            // buttonNombre
-            // 
-            buttonNombre.Location = new Point(46, 92);
-            buttonNombre.Name = "buttonNombre";
-            buttonNombre.Size = new Size(251, 23);
-            buttonNombre.TabIndex = 15;
-            buttonNombre.UseVisualStyleBackColor = true;
-          
-            // 
-            // buttonApellido
-            // 
-            buttonApellido.Location = new Point(325, 92);
-            buttonApellido.Name = "buttonApellido";
-            buttonApellido.Size = new Size(251, 23);
-            buttonApellido.TabIndex = 16;
-            buttonApellido.UseVisualStyleBackColor = true;
-            // 
-            // buttonDNI
-            // 
-            buttonDNI.Location = new Point(46, 162);
-            buttonDNI.Name = "buttonDNI";
-            buttonDNI.Size = new Size(251, 23);
-            buttonDNI.TabIndex = 17;
-            buttonDNI.UseVisualStyleBackColor = true;
-            // 
-            // buttonFecha
-            // 
-            buttonFecha.Location = new Point(325, 162);
-            buttonFecha.Name = "buttonFecha";
-            buttonFecha.Size = new Size(251, 23);
-            buttonFecha.TabIndex = 18;
-            buttonFecha.UseVisualStyleBackColor = true;
-            // 
-            // buttonEmail
-            // 
-            buttonEmail.Location = new Point(46, 233);
-            buttonEmail.Name = "buttonEmail";
-            buttonEmail.Size = new Size(251, 23);
-            buttonEmail.TabIndex = 19;
-            buttonEmail.UseVisualStyleBackColor = true;
-            // 
-            // buttonTelefono
-            // 
-            buttonTelefono.Location = new Point(325, 233);
-            buttonTelefono.Name = "buttonTelefono";
-            buttonTelefono.Size = new Size(251, 23);
-            buttonTelefono.TabIndex = 20;
-            buttonTelefono.UseVisualStyleBackColor = true;
-            // 
-            // buttonDireccion
-            // 
-            buttonDireccion.Location = new Point(48, 302);
-            buttonDireccion.Name = "buttonDireccion";
-            buttonDireccion.Size = new Size(528, 23);
-            buttonDireccion.TabIndex = 21;
-            buttonDireccion.UseVisualStyleBackColor = true;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.Location = new Point(48, 374);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(251, 23);
-            buttonUsuario.TabIndex = 22;
-            buttonUsuario.UseVisualStyleBackColor = true;
-            // 
-            // buttonContraseña
-            // 
-            buttonContraseña.Location = new Point(325, 374);
-            buttonContraseña.Name = "buttonContraseña";
-            buttonContraseña.Size = new Size(251, 23);
-            buttonContraseña.TabIndex = 23;
-            buttonContraseña.UseVisualStyleBackColor = true;
-            // 
-            // buttonTipoUsuario
-            // 
-            buttonTipoUsuario.Location = new Point(44, 442);
-            buttonTipoUsuario.Name = "buttonTipoUsuario";
-            buttonTipoUsuario.Size = new Size(251, 23);
-            buttonTipoUsuario.TabIndex = 24;
-            buttonTipoUsuario.UseVisualStyleBackColor = true;
-            // 
             // lblErrorNombre
             // 
             lblErrorNombre.AutoSize = true;
@@ -368,12 +288,112 @@
             lblErrorTipoUsuario.Size = new Size(0, 15);
             lblErrorTipoUsuario.TabIndex = 34;
             // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(46, 92);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(253, 23);
+            txtNombre.TabIndex = 35;
+            // 
+            // txtApellido
+            // 
+            txtApellido.Location = new Point(325, 92);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(253, 23);
+            txtApellido.TabIndex = 36;
+            // 
+            // txtDNI
+            // 
+            txtDNI.Location = new Point(46, 162);
+            txtDNI.Name = "txtDNI";
+            txtDNI.Size = new Size(253, 23);
+            txtDNI.TabIndex = 37;
+            // 
+            // txtFechaNac
+            // 
+            txtFechaNac.Location = new Point(325, 162);
+            txtFechaNac.Name = "txtFechaNac";
+            txtFechaNac.Size = new Size(253, 23);
+            txtFechaNac.TabIndex = 38;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(46, 233);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(253, 23);
+            txtEmail.TabIndex = 39;
+            // 
+            // txtTelefono
+            // 
+            txtTelefono.Location = new Point(325, 233);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(253, 23);
+            txtTelefono.TabIndex = 40;
+            // 
+            // txtDireccion
+            // 
+            txtDireccion.Location = new Point(46, 302);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(532, 23);
+            txtDireccion.TabIndex = 41;
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.Location = new Point(46, 374);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(253, 23);
+            txtUsuario.TabIndex = 42;
+            // 
+            // txtContraseña
+            // 
+            txtContraseña.Location = new Point(325, 374);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(253, 23);
+            txtContraseña.TabIndex = 43;
+            // 
+            // cmbTipoUsuario
+            // 
+            cmbTipoUsuario.FormattingEnabled = true;
+            cmbTipoUsuario.Location = new Point(46, 444);
+            cmbTipoUsuario.Name = "cmbTipoUsuario";
+            cmbTipoUsuario.Size = new Size(253, 23);
+            cmbTipoUsuario.TabIndex = 44;
+            // 
+            // btnConfirmar
+            // 
+            btnConfirmar.BorderColor = Color.Silver;
+            btnConfirmar.ButtonColor = Color.Tomato;
+            btnConfirmar.FlatAppearance.BorderSize = 0;
+            btnConfirmar.FlatStyle = FlatStyle.Flat;
+            btnConfirmar.Font = new Font("Inter SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnConfirmar.Location = new Point(325, 422);
+            btnConfirmar.Name = "btnConfirmar";
+            btnConfirmar.OnHoverBorderColor = Color.Gray;
+            btnConfirmar.OnHoverButtonColor = Color.FromArgb(255, 192, 192);
+            btnConfirmar.OnHoverTextColor = Color.Gray;
+            btnConfirmar.Size = new Size(120, 54);
+            btnConfirmar.TabIndex = 45;
+            btnConfirmar.Text = "Confirmar";
+            btnConfirmar.TextColor = Color.White;
+            btnConfirmar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(631, 557);
+            Controls.Add(btnConfirmar);
+            Controls.Add(cmbTipoUsuario);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtUsuario);
+            Controls.Add(txtDireccion);
+            Controls.Add(txtTelefono);
+            Controls.Add(txtEmail);
+            Controls.Add(txtFechaNac);
+            Controls.Add(txtDNI);
+            Controls.Add(txtApellido);
+            Controls.Add(txtNombre);
             Controls.Add(lblErrorTipoUsuario);
             Controls.Add(lblErrorContraseña);
             Controls.Add(lblErrorUsuario);
@@ -384,16 +404,6 @@
             Controls.Add(lblErrorDNI);
             Controls.Add(lblErrorApellido);
             Controls.Add(lblErrorNombre);
-            Controls.Add(buttonTipoUsuario);
-            Controls.Add(buttonContraseña);
-            Controls.Add(buttonUsuario);
-            Controls.Add(buttonDireccion);
-            Controls.Add(buttonTelefono);
-            Controls.Add(buttonEmail);
-            Controls.Add(buttonFecha);
-            Controls.Add(buttonDNI);
-            Controls.Add(buttonApellido);
-            Controls.Add(buttonNombre);
             Controls.Add(linkLabelVolver);
             Controls.Add(lblTipoUsuario);
             Controls.Add(lblContraseña);
@@ -432,16 +442,6 @@
         private Label lblTipoUsuario;
         private LinkLabel linkLabelVolver;
         private ePOSOne.btnProduct.Button_WOC button_wocConfirmar;
-        private Button buttonNombre;
-        private Button buttonApellido;
-        private Button buttonDNI;
-        private Button buttonFecha;
-        private Button buttonEmail;
-        private Button buttonTelefono;
-        private Button buttonDireccion;
-        private Button buttonUsuario;
-        private Button buttonContraseña;
-        private Button buttonTipoUsuario;
         private Label lblErrorNombre;
         private Label lblErrorApellido;
         private Label lblErrorDNI;
@@ -452,5 +452,16 @@
         private Label lblErrorUsuario;
         private Label lblErrorContraseña;
         private Label lblErrorTipoUsuario;
+        private TextBox txtNombre;
+        private TextBox txtApellido;
+        private TextBox txtDNI;
+        private TextBox txtFechaNac;
+        private TextBox txtEmail;
+        private TextBox txtTelefono;
+        private TextBox txtDireccion;
+        private TextBox txtUsuario;
+        private TextBox txtContraseña;
+        private ComboBox cmbTipoUsuario;
+        private ePOSOne.btnProduct.Button_WOC btnConfirmar;
     }
 }
